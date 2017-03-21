@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Darc Boykin | Web Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/css/uikit.min.css">
     <link rel="stylesheet" type="text/css" href="profile.css">
 </head>
@@ -28,7 +29,7 @@
     <div id="projects" class="uk-container uk-container-center">
         <h2>Projects</h2>
         <div uk-grid>
-            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center">
+            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
                 <h3 class="uk-card-title ">Inter_EAT</h3>
                 <img class="uk-align-center uk-align-left@m uk-margin-remove-right uk-margin-remove-bottom project_photo" src="assets/Inter_Eat.png">
                 <p>
@@ -41,7 +42,7 @@
                     <li>Axios</li>
                 </ul>
             </div>
-            <div class=" uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center">
+            <div class=" uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
                 <h3 class="uk-card-title">Library Adventure RPG</h3>
                 <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent uk-margin-remove-bottom project_photo" src="assets/Library_Adventure.png" alt=" ">
                 <p>
@@ -53,7 +54,7 @@
                     <li>Object Oriented Programming</li>
                 </ul>
             </div>
-            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center ">
+            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
                 <h3 class="uk-card-title ">RemindR</h3>
                 <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent uk-margin-remove-bottom project_photo" src="assets/Remindr.png" alt=" ">
                 <p>
@@ -68,9 +69,14 @@
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
-    <script src="./index.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/js/uikit.min.jss " type="text/javascript " charset="utf-8 " async defer></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        window.sr = ScrollReveal();
+        sr.reveal('.project');
+    })
+    </script>
 </body>
 
 </html>
