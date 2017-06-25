@@ -1,82 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Darc Boykin | Web Developer</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript " charset="utf-8 " async defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/css/uikit.min.css">
-    <link rel="stylesheet" type="text/css" href="profile.css">
-</head>
-
-<body class="uk-background-muted">
-    <header>
-        <nav class="uk-navbar-container" uk-navbar>
-            <div class="uk-navbar-left">
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="#">Projects</a></li>
-                    <li class="uk-active"><a href="#">About</a></li>
-                </ul>
-            </div>
-        </nav>
-        <img src="assets/me.jpg" alt="me" id="prof" />
-        <div id="contain">
-            <h1 class="uk-animation-slide-left-medium" id="name">Darc Boykin</h1>
-            <h1 class="uk-animation-slide-right-medium" id="title">Web Developer</h1>
-        </div>
-    </header>
-    <br>
-    <div id="projects" class="uk-container uk-container-center">
-        <h2>Projects</h2>
-        <div uk-grid>
-            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
-                <h3 class="uk-card-title ">Inter_EAT</h3>
-                <img class="uk-align-center uk-align-left@m uk-margin-remove-right uk-margin-remove-bottom project_photo" src="assets/Inter_Eat.png">
-                <p>
-                    An application that takes advantage of the Google Maps, Geolocation, and Yelp APIs. The data from the Google Maps and Geolocation APIs are sent to the Yelp API. The Yelp API then renders locations relative to the user's location, based on the choice choice of cuisine they selected from a prepopulated list.
-                </p>
-                <ul>
-                    <li>NodeJS</li>
-                    <li>ExpressJS</li>
-                    <li>Google/Yelp APIs</li>
-                    <li>Axios</li>
-                </ul>
-            </div>
-            <div class=" uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
-                <h3 class="uk-card-title">Library Adventure RPG</h3>
-                <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent uk-margin-remove-bottom project_photo" src="assets/Library_Adventure.png" alt=" ">
-                <p>
-                    A small game made in Javascript inspired by the old-school Final Fantasy games. The characters are two instances of one javascript object. The object has an attack and defend method. Each character has a chance land a critical hit to land more damage. The goal is to strategically use your attacks and potions do defeat the other character before he kills you.
-                </p>
-                <ul>
-                    <li>Javascript ES6 Classes</li>
-                    <li>jQuery</li>
-                    <li>Object Oriented Programming</li>
-                </ul>
-            </div>
-            <div class="uk-card uk-card-secondary uk-card-body uk-width-1@m uk-align-center project">
-                <h3 class="uk-card-title ">RemindR</h3>
-                <img class="uk-align-center uk-align-left@m uk-margin-remove-adjacent uk-margin-remove-bottom project_photo" src="assets/Remindr.png" alt=" ">
-                <p>
-                    This app was developed to save entertainment, separated by category, that they wish to consume at a later date. It was developed to solve the issue of having no way to remember all of those recommendation from friends on what you should watch, read, or visit during your free time. Uses sequelize to allow users to log in and out to save personalized lists.
-                </p>
-                <ul>
-                    <li>NodeJS</li>
-                    <li>ExpressJS</li>
-                    <li>Sequelize</li>
-                    <li>Materialize CSS</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.9/js/uikit.min.jss " type="text/javascript " charset="utf-8 " async defer></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        window.sr = ScrollReveal();
-        sr.reveal('.project');
-    })
-    </script>
-</body>
-
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Darc Boykin | Web Developer</title>
+	    <link rel="stylesheet" type="text/css" href="style.css">
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+	</head>
+	<body>
+	    <header>
+	    	<h1 class="name"><span class="elec">Darc</span> Boykin</h1>
+	    	<h2 class="title">Web <span class="elec">Developer</span></h2>
+	        <nav>
+	        	<li class="menuitem">projects</li>
+	        	<li class="menuitem">about</li>
+	        	<li class="menuitem">contact</li>
+	        </nav>
+	    </header>
+	    <div class="main">
+		    <div class="projects">
+				<h2>Projects</h2>
+		    </div>
+		    <div class="about">
+		    	<h2>The story so far . . .</h2>
+		    </div>
+		    <div class="contact">
+		    	<h2>Get in Touch!</h2>
+		    </div>
+	    </div>
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </html>
