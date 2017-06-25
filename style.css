@@ -56,7 +56,9 @@ nav {
     text-align: center;
 }
 
-li {
+a {
+    text-decoration: none;
+    color: white;
     margin: 0;
     display: inline-block;
     height: 80px;
@@ -81,17 +83,17 @@ h2 {
     text-align: center;
 }
 
-.projects {
+#projects {
     height: 100%;
     width: 100%;
 }
 
-.about {
+#about {
     height: 100%;
     width: 100%;
 }
 
-.contact {
+#contact {
     height: 100%;
     width: 100%;
 }
