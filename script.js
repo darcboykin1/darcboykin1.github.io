@@ -6,8 +6,9 @@ $(document).ready(function(){
 
 $("a").smoothScroll();
 
-// $(document).ready(function(){
-// 	$(".menuitem").hover(function(){
-
-// 	})
-// })
+// $(function(){
+//     $("#slides").slidesjs({
+//        width: 940,
+//        height: 528
+//    });
+// });
