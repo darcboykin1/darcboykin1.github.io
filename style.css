@@ -12,6 +12,10 @@ body {
     width: 100%;
 }
 
+div {
+    background-color: rgba(256,256,256,0.3);
+}
+
 header {
     color: white;
     width: 100%;
@@ -76,9 +80,9 @@ a {
     height: 100%;
 }
 
-h2 {
+h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0px;
 }
 
@@ -100,8 +104,19 @@ h2 {
 
 .project {
     width: 80%;
-    height: 50%;
+    height: 300px;
     border: 1px solid black;
+}
+
+.project_img{
+    width: 300px;
+    float: left;
+    margin: 4px 10px 0px 0px; 
+    border: 1px solid #000000;
+}
+
+.project_desc{
+    clear: both;
 }
 
 /*END OF THE PROJECTS SECTION*/
@@ -117,7 +132,7 @@ h2 {
 
 .aboutpic {
     border-radius: 100px;
-    margin-top: 45px;
+    margin-top: 50px;
 }
 
 .aboutarticle {
@@ -128,6 +143,9 @@ h2 {
 
 }
 
+.fat{
+    font-size: 50px;
+}
 /*END OF THE ABOUT SECTION*/
 
 /*BEGINNING OF THE CONTACT SECTION*/
@@ -135,6 +153,28 @@ h2 {
 #contact {
     height: 100%;
     width: 100%;
+}
+
+.contactContainer {
+    width: 80%;
+    height: 80%;
+/*    background: rgba(87, 101, 203, 0.5);*/
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contactimg {
+    width: 200px;
+    -webkit-transition: 0.25s;
+}
+
+.contactimg:hover {
+    width: 220px;
+    -webkit-transition: 0.25s;
 }
 
 /*END OF THE CONTACT SECTION*/
