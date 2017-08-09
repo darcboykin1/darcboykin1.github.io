@@ -20,17 +20,19 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 
     console.log(skills)
 
-    $(".projects").append(
-    	`<div class="project">
+    $(".projects").append(`
+    	<div class="project">
     		<h1>${key}</h1>
     		<p>${meat.description}</p>
-    		<ul class="skills">
+    		<ul class="${key}">
     		</ul>
-    	</div>`
+    		<a href="${meat.link}" class="linkTo">Check it out</a>
+    	</div>
+    	`
     	);
 
     for (var i = 0; i < skills.length; i++){
-    	$("ul").append(`<li>${skills[i]}</li>`);
+    	$(`.${key}`).append(`<li>${skills[i]}</li>`);
     }
 });
   })
