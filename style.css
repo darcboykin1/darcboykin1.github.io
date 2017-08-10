@@ -22,9 +22,11 @@ header {
     height: 100%;
     padding-top: 10px;
     background-color: rgba(0,0,0,0.5);
-    background-position: center;
+    background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
+    top: 0;
+    bottom: 0;
     position: relative;
 }
 

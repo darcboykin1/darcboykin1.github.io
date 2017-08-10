@@ -5,6 +5,13 @@ $(document).ready(function(){
 	console.log("jQuery is connected");
 });
 
+$(function(){
+	$(".projects").slidesjs({
+		width: 940,
+        height: 528
+	});
+});
+
 $("a").smoothScroll();
 
 axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
@@ -38,4 +45,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
   })
   .catch(function(error) {
     console.log(error);
-  });
+});
+
+
+
