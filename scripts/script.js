@@ -27,7 +27,10 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     		<p class="project_description">${meat.description}</p>
     		<ul class="${key}">
     		</ul>
-    		<a href="${meat.link}" class="linkTo">Check it out</a>
+    		<div class="icon_home">
+    			<a href="${meat.repo}" class="linkToRepo"><img src="http://www.jordland.com/img/social-media/github-w.png" width="50px" title="Check out the repo!"></a>
+    			<a href="${meat.link}" class="linkTo"><img src="https://www.hixagency.com/Images/globe-icon.png" width="50px" title="Try it out!"></a>
+    		</div>
     	</div>
     	`
     );
@@ -36,7 +39,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     	$(`.${key}`).append(`<li>${skills[i]}</li>`);
     };
 });
-    
+
     window.sr = ScrollReveal({
     	reset: false
     });
@@ -48,6 +51,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
   }).catch(function(error) {
     console.log(error);
 });
+
 
 
 
