@@ -35,12 +35,23 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     for (var i = 0; i < skills.length; i++){
     	$(`.${key}`).append(`<li>${skills[i]}</li>`);
     };
-
 });
-  })
-  .catch(function(error) {
+    
+    window.sr = ScrollReveal({
+    	reset: false
+    });
+
+	sr.reveal('.project', {duration: 500}, 150);
+
+	sr.reveal('.contactimg', {duration: 500}, 150);
+
+  }).catch(function(error) {
     console.log(error);
 });
+
+
+
+
 
 
 
