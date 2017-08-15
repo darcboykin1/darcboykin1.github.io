@@ -5,13 +5,6 @@ $(document).ready(function(){
 	console.log("jQuery is connected");
 });
 
-$(function(){
-	$(".projects").slidesjs({
-		width: 940,
-        height: 528
-	});
-});
-
 $("a").smoothScroll();
 
 axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
@@ -27,25 +20,31 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 
     console.log(skills)
 
-    $(".projects").append(`
+    $("#projects").append(`
     	<div class="project">
-    		<h1>${key}</h1>
-    		<p>${meat.description}</p>
+    		<h1 class="project_name">${key}</h1>
+    		<br>
+    		<p class="project_description">${meat.description}</p>
     		<ul class="${key}">
     		</ul>
     		<a href="${meat.link}" class="linkTo">Check it out</a>
     	</div>
     	`
-    	);
+    );
 
     for (var i = 0; i < skills.length; i++){
     	$(`.${key}`).append(`<li>${skills[i]}</li>`);
-    }
+    };
+
 });
   })
   .catch(function(error) {
     console.log(error);
 });
+
+
+
+
 
 
 
