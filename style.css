@@ -160,6 +160,14 @@ h1 {
     line-height: 25px;
 }
 
+.skillListHeader {
+    border-bottom: 1px solid white;
+    text-align: center;
+    position: relative;
+    width: 20%;
+    margin-bottom: 0px;
+}
+
 .project ul {
     list-style: none;
     padding: 0px;
@@ -169,6 +177,7 @@ h1 {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: flex-end;
+    /*border: 1px solid red;*/
 }
 
 .icon_home {
@@ -183,10 +192,15 @@ h1 {
     padding-bottom: 15px;
 }
 
-.linkTo {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
+
+.linkToRepo {
+    width: 50px;
+    transition: 0.3s;
+}
+
+.linkToApp {
+    width: 50px;
+    transition: 0.3s;
 }
 
 /*END OF THE PROJECTS SECTION*/

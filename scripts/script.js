@@ -28,25 +28,27 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     		<ul class="${key}">
     		</ul>
     		<div class="icon_home">
-    			<a href="${meat.repo}" class="linkToRepo"><img src="http://www.jordland.com/img/social-media/github-w.png" width="50px" title="Check out the repo!"></a>
-    			<a href="${meat.link}" class="linkTo"><img src="https://www.hixagency.com/Images/globe-icon.png" width="50px" title="Try it out!"></a>
+    			<a href="${meat.repo}"><img src="http://www.jordland.com/img/social-media/github-w.png" title="Check out the repo!" class="linkToRepo"></a>
+    			<a href="${meat.link}"><img src="https://www.hixagency.com/Images/globe-icon.png" title="Try it out!" class="linkToApp"></a>
     		</div>
     	</div>
     	`
     );
 
     for (var i = 0; i < skills.length; i++){
-    	$(`.${key}`).append(`<li>${skills[i]}</li>`);
+    	$(`.${key}`).append(`<li class="skill">${skills[i]}</li>`);
     };
 });
 
     window.sr = ScrollReveal({
-    	reset: false
+    	reset: true
     });
 
 	sr.reveal('.project', {duration: 500}, 150);
 
 	sr.reveal('.contactimg', {duration: 500}, 150);
+
+	sr.reveal('.skill', {duration: 1100}, 120);
 
   }).catch(function(error) {
     console.log(error);
