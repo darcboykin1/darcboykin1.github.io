@@ -227,6 +227,67 @@ h1 {
 .fat{
     font-size: 50px;
 }
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0em;
+    }
+
+    header, #projects, #about, #contact {
+        box-sizing: border-box;
+    }
+
+    #projects {
+        padding: 0px;
+        padding-top: 2em;
+    }
+
+    #about {
+        flex-flow: column wrap;
+    }
+
+    .aboutpic {
+        display: none;
+    }
+}
+
+@media (max-width: 414px){
+    *{
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #projects, #about, #contact {
+        height: initial;
+    }
+
+    .project {
+        width: 414px;
+        padding: 0px;
+    }
+
+    .project_description {
+        width: 414px;
+    }
+
+    .project ul {
+        align-items: center;
+    }
+
+    .fat {
+        font-size: 30px;
+    }
+
+    .aboutarticle {
+        width: 90%;
+        font-size: 25px;
+    }
+
+}
 /*END OF THE ABOUT SECTION*/
 
 /*BEGINNING OF THE CONTACT SECTION*/

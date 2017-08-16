@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded", function(){
+
+
 console.log("JavaScript is connected");
 
 
@@ -27,6 +30,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     		<div style="width: 405px; background-color: rgba(0,0,0,0);">
     			<p class="project_description">${meat.description}</p>
     		</div>
+    		<br>
     		<h3>Skills Used:</h3>
     		<ul class="${key}">
     		</ul>
@@ -43,9 +47,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     };
 });
 
-    window.sr = ScrollReveal({
-    	reset: false
-    });
+    window.sr = ScrollReveal();
 
 	sr.reveal('.project', {duration: 500}, 150);
 
@@ -53,9 +55,21 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 
 	sr.reveal('.skill', {duration: 1100}, 120);
 
+	sr.reveal('.aboutarticle', {
+		duration: 3000,
+		origin: 'right'
+	});
+
+	sr.reveal('.aboutpic',{
+		duration: 5000,
+		origin: 'left'
+	});
+
   }).catch(function(error) {
     console.log(error);
 });
+
+ })
 
 
 
