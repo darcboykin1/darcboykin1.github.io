@@ -27,7 +27,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     	<div class="project">
     		<h1 class="project_name">${key}</h1>
     		<br>
-    		<div style="width: 405px; background-color: rgba(0,0,0,0);">
+    		<div class="descriptDiv" style="background-color: rgba(0,0,0,0);">
     			<p class="project_description">${meat.description}</p>
     		</div>
     		<br>
