@@ -227,6 +227,7 @@ h1 {
     font-size: 50px;
 }
 
+
 @media (max-width: 768px) {
     nav {
         padding: 0em;
@@ -250,6 +251,7 @@ h1 {
     }
 }
 
+/*iPhone 6 plus*/
 @media (max-width: 414px){
     *{
         margin: 0px;
@@ -265,12 +267,12 @@ h1 {
     }
 
     .project {
-        width: 414px;
+        width: 100%;
         padding: 0px;
     }
 
     .project_description {
-        width: 414px;
+        width: 100%;
     }
 
     .project ul {
@@ -287,6 +289,7 @@ h1 {
     }
 }
 
+/*iPhone 6*/
 @media (max-width: 375px){
     .project {
         width: 100%;
@@ -301,6 +304,7 @@ h1 {
     }
 }
 
+/*iPhone 5*/
 @media (max-width: 320px) {
     * {
         margin: 0px;
@@ -310,19 +314,6 @@ h1 {
     .menuitem {
         font-size: 15px;
     }
-
-    /*.project {
-        width: 320px;
-        padding: 0px;
-    }
-
-    .project_description {
-        width: 320px;
-    }
-
-    .descriptDiv {
-        width: 320px;
-    }*/
 }
 /*END OF THE ABOUT SECTION*/
 
