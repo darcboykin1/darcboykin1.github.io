@@ -56,12 +56,12 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 	sr.reveal('.skill', {duration: 1100}, 120);
 
 	sr.reveal('.aboutarticle', {
-		duration: 3000,
+		duration: 2000,
 		origin: 'right'
 	});
 
 	sr.reveal('.aboutpic',{
-		duration: 5000,
+		duration: 4000,
 		origin: 'left'
 	});
 

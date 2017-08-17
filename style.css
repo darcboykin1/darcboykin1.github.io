@@ -249,6 +249,11 @@ h1 {
     .aboutpic {
         display: none;
     }
+
+    #projects {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 
 /*iPhone 6 plus*/
