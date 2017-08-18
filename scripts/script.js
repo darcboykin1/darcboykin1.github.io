@@ -15,7 +15,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 
     let projects = response.data;
 
-    Object.keys(projects).forEach(function(key) {
+    Object.keys(projects).forEach((key) => {
 
     let meat = projects[key];
 
