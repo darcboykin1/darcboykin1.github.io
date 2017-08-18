@@ -18,6 +18,10 @@ body {
     background-color: rgba(256,256,256,0.4);
 }
 
+#main {
+    height: 100%;
+}
+
 .web_header {
     color: white;
     width: 100%;
@@ -32,42 +36,6 @@ body {
     position: relative;
     z-index: 1;
 }
-
-/*Creating the mobile menu*/
-
-.mobile_head {
-    height: 80px;
-    background-color: rgba(0,0,0,0.8);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-#mobile_menu {
-    height: 0;
-    transition: 1s;
-}
-
-.mobile_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid white;
-    padding: 10px;
-    text-decoration: none;
-    background-color: rgba(0,0,0,0.9);
-    color: white;
-    height: 40px;
-    box-sizing: border-box;
-}
-
-#burger {
-    width: 50px;
-}
-
-/*finishing the mobile menu*/
 
 .elec {
     color: #035096;
@@ -283,8 +251,9 @@ h1 {
 }
 /*END OF THE CONTACT SECTION*/
 
-/*Responsive styling*/
 
+
+/*Responsive styling*/
 
 @media (max-width: 768px) {
     /*.desk_menu {
@@ -318,10 +287,6 @@ h1 {
 @media (max-width: 736px) {
     .contactimg {
         width: 125px;
-    }
-
-     .desk_menu {
-        display: none;
     }
 }
 
@@ -360,10 +325,6 @@ h1 {
     .aboutarticle {
         width: 90%;
         font-size: 25px;
-    }
-
-    .mobile_menu{
-        display: block;
     }
 }
 
