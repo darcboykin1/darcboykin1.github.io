@@ -68,8 +68,37 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
   }).catch(function(error) {
     console.log(error);
 });
+  var hamburger = document.getElementById("burger");
+  var nav = document.getElementById("mobile_menu");
+  var isOpen = false;
+  var links = document.getElementsByClassName("mobile_item");
 
- })
+  function openMenu(){
+  	nav.style.height = "120px";
+  }
+
+  function closeMenu(){
+  	nav.style.height = "0px";
+  }
+
+  burger.onclick = function(){
+  	if(isOpen === false){
+  		openMenu();
+  		isOpen = true;
+  	} else {
+  		closeMenu();
+  		isOpen = false;
+  	}
+  }
+
+  nav.onclick = function(){
+  	if(isOpen === true){
+  	closeMenu();
+  	isOpen = false;
+  }
+  }
+});
+
 
 
 
