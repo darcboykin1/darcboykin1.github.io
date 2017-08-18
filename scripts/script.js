@@ -93,9 +93,9 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
 
   nav.onclick = function(){
   	if(isOpen === true){
-  	closeMenu();
-  	isOpen = false;
-  }
+  		closeMenu();
+  		isOpen = false;
+  	}
   }
 });
 

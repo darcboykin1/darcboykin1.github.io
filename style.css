@@ -319,6 +319,10 @@ h1 {
     .contactimg {
         width: 125px;
     }
+
+     .desk_menu {
+        display: none;
+    }
 }
 
 /*iPhone 6 plus*/
@@ -357,11 +361,6 @@ h1 {
         width: 90%;
         font-size: 25px;
     }
-
-    .desk_menu {
-        display: none;
-    }
-
 
     .mobile_menu{
         display: block;
