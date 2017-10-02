@@ -27,7 +27,7 @@ body {
     color: white;
     width: 100%;
     height: 100%;
-    padding-top: 10px;
+    padding-top: 0px;
     background-color: rgba(0,0,0,0.5);
     background-position: fixed;
     background-size: cover;
@@ -38,11 +38,18 @@ body {
     top: 0;
     bottom: 0;
     position: relative;
+}
+
+.z {
+    position: relative;
     z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .elec {
-    color: black;
+    color: #035096;
 }
 
 .name, .title {
@@ -260,6 +267,10 @@ h1 {
 
     header, #projects, #about, #contact {
         box-sizing: border-box;
+    }
+
+    .webheader {
+        background: url("https://i.pinimg.com/originals/79/bd/30/79bd30b080463e5ee8155902d855461d.jpg");
     }
 
     #projects {
