@@ -35,7 +35,7 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     		<ul class="${key}">
     		</ul>
     		<div class="icon_home">
-    			<a href="${meat.repo}"><img src="http://www.jordland.com/img/social-media/github-w.png" title="Check out the repo!" class="linkToRepo"></a>
+    			<a href="${meat.repo}"><img src="https://banner2.cleanpng.com/20180704/uxe/kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877.jpg" title="Check out the repo!" class="linkToRepo"></a>
     			<a href="${meat.link}"><img src="https://www.hixagency.com/Images/globe-icon.png" title="Try it out!" class="linkToApp"></a>
     		</div>
     	</div>
@@ -68,35 +68,6 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
   }).catch(function(error) {
     console.log(error);
 });
-//   var hamburger = document.getElementById("burger");
-//   var nav = document.getElementById("mobile_menu");
-//   var isOpen = false;
-//   var links = document.getElementsByClassName("mobile_item");
-
-//   function openMenu(){
-//   	nav.style.height = "120px";
-//   }
-
-//   function closeMenu(){
-//   	nav.style.height = "0px";
-//   }
-
-//   burger.onclick = function(){
-//   	if(isOpen === false){
-//   		openMenu();
-//   		isOpen = true;
-//   	} else {
-//   		closeMenu();
-//   		isOpen = false;
-//   	}
-//   }
-
-//   nav.onclick = function(){
-//   	if(isOpen === true){
-//   		closeMenu();
-//   		isOpen = false;
-//   	}
-//   }
 });
 
 
