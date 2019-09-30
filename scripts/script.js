@@ -35,8 +35,8 @@ axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
     		<ul class="${key}">
     		</ul>
     		<div class="icon_home">
-    			<a href="${meat.repo}"><img src="https://banner2.cleanpng.com/20180704/uxe/kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877.jpg" title="Check out the repo!" class="linkToRepo"></a>
-    			<a href="${meat.link}"><img src="https://www.hixagency.com/Images/globe-icon.png" title="Try it out!" class="linkToApp"></a>
+    			<a href="${meat.repo}"><img src="https://banner2.cleanpng.com/20180704/uxe/kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877.jpg" title="Check out the repo!" class="linkToRepo" target="_blank"></a>
+    			<a href="${meat.link}"><img src="https://www.hixagency.com/Images/globe-icon.png" title="Try it out!" class="linkToApp" target="_blank"></a>
     		</div>
     	</div>
     	`

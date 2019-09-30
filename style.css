@@ -244,14 +244,16 @@ h1 {
 }
 
 .contactimg {
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
     width: 200px;
 }
 
 .contactimg:hover {
-    -webkit-transition: 0.25s;
-    -moz-transition: 0.25s;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
     width: 220px;
 }
 /*END OF THE CONTACT SECTION*/
