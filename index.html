@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-	    <meta charset="UTF-8">
-	    <title>Darc Boykin | Web Developer</title>
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js"></script>
-		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-		<script type="text/javascript" src="scripts/script.js"></script>
-	    <link rel="stylesheet" type="text/css" href="style.css">
-	    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500" rel="stylesheet">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
-		<div id="main">
-		    <header class="web_header">
-		    	<div class="z">
-		    	<nav class="desk_menu">
-		        	<a class="menuitem" href="#project_container">projects</a>
-		        	<a class="menuitem" href="#about">about</a>
-		        	<a class="menuitem" href="#contact">contact</a>
-		        </nav>
-		    	<h1 class="name"><span class="elec">Darc</span> Boykin</h1>
-		    	<h1 class="title">Web <span class="elec">Developer</span></h1>
-		    	</div>
-		    </header>
-
-		    <!--  -->
-		    <div id="project_container">
-		    	<br>
-		    	<h1 style="text-align: left; border-bottom: 2px solid black; margin: 0 auto; width: 93%"><span class="fat">Projects</span></h1>
-				<div id="projects">
-					<!-- content appended dynamically -->
-		    	</div>
-		    </div>
-		    <!--  -->
-		    <div id="about">
-		    	<img src="./assets/mencorgi.jpg" class="aboutpic" alt="Darc and a Corgi" height="300px" style="border-radius: 200%;">
-		   		<article class="aboutarticle">
-		   			<h1 style="text-align: left; border-bottom: 2px solid black"><span class="fat">The story so far . . .</span></h1>
-		   			<p><span class="fat">B</span>orn and raised in the Empire State, I am a developer with solid foundations in the holy trinity (HTML, CSS and Javascript). In addition to that, I have experience manipulating JSON data (if you inspect my portfolio, you might be able to see some JSON skills in action!), as well as practical experience in advanced libraries and frameworks like React, Node and Express. I find pleasure in approaching a problem from many different angles, and am hard to frustrate, so working in this field is basically my calling. I currently do work as a part time youth instructor for Generation Code as well as Advisory work for Codecademy. When not building, my hobbies include continuing my novel, finding new places to eat in the city, and making gratuitous use of my AMC A-List subscription. Feel free to reach out!</p>
-		   		</article>
-		    </div>
-		    <!--  -->
-		    <div id="contact">
-		    	<!--  -->
-		    	<h1 style="margin-bottom: 2em;"><span class="fat">Get in Touch!</span></h1>
-		   		<!--  -->
-		   		<div class="contactContainer">
-				<a href="https://www.github.com/darcboykin1" title="https://www.github.com/darcboykin1" target="_blank">
-					<img src="./assets/githubicon.png" class="contactimg">
-				</a>
-				<!--  -->
-				<a href="https://www.linkedin.com/in/darcboykin/" title="https://www.linkedin.com/in/darcboykin/" target="_blank">
-					<img src="./assets/linkedinicon.png" alt="w" class="contactimg">
-				</a>
-				<!--  -->
-			   	<a href="https://mail.google.com" title="darcboykin@gmail.com" target="_blank">
-			   		<img src="./assets/gmail.png" class="contactimg">
-			   	</a>
-			   	<a href="resume.html" title="Check out my CV" target="_blank"><img src="./assets/resume.png" alt="" class="contactimg"></a>
-			   	</div>
-			   	<!--  -->
-			</div>
-			<!--  -->
+<head>
+	<meta charset="UTF-8">
+	<title>Darc Boykin | Web Developer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="innerHead">
+		<!-- the 'opening' home screen area' -->
+		<nav class="headnav">
+			<nav class="innerNav">
+				<a href="#"><li id="about">ABOUT</li></a>
+				<a href="#"><li id="mission">MISSION</li></a>
+				<a href="#"><li id="projects">PROJECTS</li></a>
+			</nav>
+		</nav>
+		<div class="headFlex">
+			<h1 id="name">DARC BOYKIN</h1>
+			<aside class="typecontainer">
+				<p class="typewriter">Community<span class="pinklight">.</span></span> <span class="pinklight">Innovation</span>. Creation<span class="goldlight"><span class="pinklight">.</span></span></p>
+			</aside>
 		</div>
-	</body>
+		
+	</div>				
+	</header>
+	<br>
+	<div class="container">
+		<section class="biosec">
+			<div class="bioimg">
+				<img src="./assets/faceshot.jpg" class="face">
+			</div>
+			<article id="bio">
+				<p><span class="bluebold">B</span>ased in New York, where I was born and raised, I am experienced in working with HTML, CSS and JavaScript. This is in addition to the practical experience I have working with both Front End and Back End technologies like React, Node/Express, and jQuery. Recently, I have worked as a Front End Consultant with the company richRelevance. I currently work Part Time as an Advisor for Codecademy, where I assist students with the completion of projects and assignments on the platform.</p>
+			</article>
+		</section>
+		<br>
+		<hr>
+		<br>
+		<section class="mission">
+		<h2>The <span class="goldlight">Mission</span></h2>
+			<!-- the text for the mission statement will go here -->
+			<div class="biosec">
+				<article id="missionbio">
+					<p><span class="bluebold">I</span> aim to be known as a developer adept at building stylish and functional web applications.  In the long term, I intend to learn from, contribute to, and grow alongside a team of like-minded individuals. Approaching a problem from many different angles is my forte, and I am hard to frustrate. When not building, my hobbies include continuing my novel, adding to my personal blog, and making gratuitous use of my AMC A-List subscription. Feel free to reach out.</p>
+				</article>
+			</div>
+		</section>
+		<br>
+		<hr>
+		<br>
+		<section class="content">
+		<h2>The <span class="goldlight">Works</span></h2>
+			<!-- here will go the content videos that he's interested in displaying -->
+			<div class="projects">
+			</div>
+		</section>
+	</div>
+	<!-- End of the container -->
+	<footer class="contact">
+		<section class="foottextcontainer">
+			<h2 class="foottext">Catch me on</h2>
+		</section>
+		<nav class="footnav">
+			<a href="https://github.com/darcboykin1" target="_blank"><li>Github</li></a>
+			<a href="https://www.linkedin.com/in/darcboykin/" target="_blank"><li>LinkedIn</li></a>
+		</nav>
+	</footer>
+	<script src="index.js"></script>
+</body>
 </html>

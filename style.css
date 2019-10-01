@@ -1,417 +1,290 @@
 * {
-    font-family: "roboto";
-    font-weight: 100;
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr {
+	margin: 0 auto;
+	width: 90%;
+    border: 0;
+    height: 2px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #1D599C, #ccc);
+}
+
+.headFlex {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+}
+
+.typewriter {
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 4px 4px #1D599C;
+	font-size: 18px;
+	text-align: center;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+.goldlight {
+	color: #1D599C;
+	font-weight: bolder;
+	text-shadow: 2px 2px pink;
+}
+
+.pinklight {
+	color: pink;
+	font-weight: bolder;
+	text-shadow: 2px 2px #1D599C;
+}
+
+.bluebold {
+	color: #1D599C;
+	font-size: 30px;
+}
+
+header {
+	width: 100%;
+	height: 100vh;
+	background: url("./assets/animecity.jpg");
+	background-size: cover;
+
+}
+
+.innerHead {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.headnav {
+	list-style: none;
+	text-align: right;
+	color: white;
+	background: rgba(0,0,0,1);
+	height: 50px;
+}
+
+.innerNav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 20%;
+	height: inherit;
+	float: right;
+}
+
+li, a, nav {
+	text-decoration: none;
+}
+
+a {
+	color: white;
+	transition: 0.5s;
+}
+
+a:hover {
+	color: #1D599C;
+	transition: 0.5s;
+}
+
+#name, .soon {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 45px;
+}
+
+#name {
+	color: white;
+	text-shadow: 4px 4px #1D599C;
+}
+
+.face {
+	width: 300px;
+}
+
+/*THE "COMING SOON" AND THE "THE WORKS" ARE NOT LINED UP AND IT'S BUGGING ME*/
+
+.soon {
+	right: 1.5%;
+}
+
+/*END*/
+
+.container {
+	width: 100%;
+	text-align: center;
+}
+
+.biosec {
+	/* position: relative; */
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	/* flex-wrap: wrap; */
+}
+
+.bioimg {
+	width: 35%;
+	display: flex;
+	align-items: center;
+}
+
+.biosec img {
+	min-height: 300px;
+	height: auto;
+
+	padding-right: 50px;
+	border-right: 2px solid #1D599C;
+}
+
+.biosec article {
+	line-height: 3em;
+	width: 65%;
+}
+
+.mission > article {
+	position: relative;
+	width: 64%;
+	margin: 0 auto;
+}
+
+#missionbio {
+	line-height: 3em;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.content {
+	width: 64%;
+	height: 400px;
+	position: relative;
+	margin: 0 auto;
 }
 
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(256,256,256,0.4);
+h2 {
+	text-align: center;
+	text-transform: uppercase;
 }
 
-#project_container, #about, #contact{
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: rgba(256,256,256,0.4);
+footer {
+	display: flex;
+	width: 100%;
+	height: 60px;
+	background: rgba(0,0,0,0.9);
+	color: white;
 }
 
-#main {
-    height: 100%;
+.foottextcontainer {
+	height: 100%;
+	border-right: 1px solid white;
+	display: flex;
+	align-items: center;
+	padding: 0px 15px;
 }
 
-.web_header {
-    color: white;
-    width: 100%;
-    height: 100%;
-    padding-top: 0px;
-    background-color: rgba(0,0,0,0.5);
-    background-position: fixed;
-    background-size: cover;
-    background: url("./assets/animecity.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    top: 0;
-    bottom: 0;
-    position: relative;
+.foottext {
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.z {
-    position: relative;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.7);
+.footnav {
+	list-style: none;
+	text-transform: uppercase;
+	width: 10%;
+	height: inherit;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
-.elec {
-    color: #035096;
+article {
+	font-size: 20px;
 }
 
-.name, .title {
-    margin: 0;
-    text-align: center;
-    position: relative;
-    top: 39%;
-}
-
-.name {
-    font-size: 60px;
-}
-
-.title {
-    font-size: 25px;
-}
-
-.desk_menu {
-    box-sizing: border-box;
-    color: white;
-    list-style: none;
-    width: 100%;
-    margin: 0;
-    padding-top: 15px;
-    padding-right: 15px;
-    text-align: right;
-    height: 50px;
-    position: relative;
-}
-
-.menuitem {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    text-transform: uppercase;
-    margin: 10px;
-    padding: 2px;
-    transition: 0.5s;
-    font-size: 20px;
-    border-bottom: 2px solid rgba(0,0,0,0);
-}
-
-.menuitem:hover {
-    border-bottom: 2px solid #035096;
-    color: #035096;
-    transition: 0.5s;
-}
-
-
-
-h1 {
-    text-align: center;
-    font-size: 35px;
-    margin: 0px;
-}
-
-/*BEGINNING OF THE PROJECTS SECTION*/
-
-#projects {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 2em;
-    box-sizing: border-box;
+.projects {
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .project {
-    text-align: center;
-    width: 425px;
-    height: 350px;
-    background: rgba(3,80,150,0.95);
-    color: white;
-    padding: 10px;
-    box-sizing: border-box;
-    position: relative;
-    margin-bottom: 2em;
-    transition: 0.3s;
-    position: relative;
+	color: white;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #1D599C;
+	background-color: #1D599C;
 }
 
-.project:hover {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-    transition: 0.3s;
+.linkToApp, .linkToRepo {
+	width: 50px;
 }
 
+@media only screen and (max-width: 1250px){
+	.biosec {
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* flex-wrap: wrap; */
+	}
 
-@keyframes loadline{
-    from{
-        width: 0%;
-    }
+	.bioimg {
+		width: initial;
+	}
 
-    to{
-        width: 100%;
-    }
+	.biosec img {
+		padding: 0px;
+		border: 0px;
+	}
+
+	.biosec article, .mission article {
+		width: 100%;
+		line-height: 2.5;
+	}
+
+	#missionbio {
+		line-height: 2.5;
+	}
 }
 
-.project_name {
-    text-align: left;
-    width: 0px;
-    margin: 0px;
-    border-bottom: 2px solid white;
-    transition: 0.3s;
-    animation: loadline 0.5s forwards;
+@media only screen and (max-width: 800px){
+	.innerNav{
+		display: none;
+	}
+
+	.foottextcontainer {
+		display: none;
+	}
+
+	.footnav {
+		margin: 0 auto;
+		width: 30%;
+	}
 }
+@media only screen and (max-width: 400px){
+	.footnav{
+		width: 50%;
+	}
 
-.project_description {
-    margin: 0px;
-    line-height: 25px;
-    font-size: 20px;
-}
+	.biosec {
+		width: 90%;
+	}
 
-
-.project ul {
-    list-style: none;
-    padding: 0px;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    font-size: 20px;
-    /*border: 1px solid red;*/
-}
-
-.icon_home {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0);
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 15px;
-    /*border: 1px solid red;*/
-}
-
-
-.linkToRepo {
-    width: 50px;
-    transition: 0.3s;
-}
-
-.linkToApp {
-    width: 50px;
-    transition: 0.3s;
-}
-
-/*END OF THE PROJECTS SECTION*/
-
-/*BEGINNING OF THE ABOUT SECTION*/
-
-#about {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.aboutarticle {
-    float: right;
-    width: 60%;
-    font-size: 30px;
-    line-height: 2;
-}
-
-.fat{
-    font-size: 50px;
-}
-/*END OF THE ABOUT SECTION*/
-
-/*BEGINNING OF THE CONTACT SECTION*/
-
-#contact {
-    width: 100%;
-    height: 100%;
-}
-
-.contactContainer {
-    width: 80%;
-    height: 80%;
-/*    background: rgba(87, 101, 203, 0.5);*/
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.contactimg {
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    width: 200px;
-}
-
-.contactimg:hover {
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    width: 220px;
-}
-/*END OF THE CONTACT SECTION*/
-
-
-
-/*Responsive styling*/
-
-@media (max-width: 768px) {
-    /*.desk_menu {
-        padding: 0em;
-    }*/
-
-    header, #projects, #about, #contact {
-        box-sizing: border-box;
-    }
-
-    .webheader {
-        background: url("https://i.pinimg.com/originals/79/bd/30/79bd30b080463e5ee8155902d855461d.jpg");
-    }
-
-    #projects {
-        padding: 0px;
-        padding-top: 2em;
-    }
-
-    #about {
-        flex-flow: column wrap;
-    }
-
-    .aboutpic {
-        display: none;
-    }
-
-    #projects {
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-
-}
-
-@media (max-width: 736px) {
-    .contactimg {
-        width: 125px;
-    }
-}
-
-/*iPhone 6 plus*/
-@media (max-width: 414px){
-    *{
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    .desk_menu {
-        text-align: center;
-    }
-
-    #projects, #about, #contact {
-        height: initial;
-    }
-
-    .project {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .project_description {
-        width: 100%;
-    }
-
-    .project ul {
-        align-items: center;
-    }
-
-    .fat {
-        font-size: 30px;
-    }
-
-    .aboutarticle {
-        width: 90%;
-        font-size: 25px;
-    }
-}
-
-/*RESUME SECTION*/
-
-.resume_body{
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-.res_name {
-    text-align: initial;
-    font-size: 40px;
-}
-
-.res_title {
-    margin-top: 0px;
-    border-bottom: 1px solid black;
-}
-
-.res_main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-}
-
-
-.res_skills {
-    width: 200px;
-}
-
-.res_list {
-    list-style: none;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-}
-
-.res_list li {
-    padding: 0.5em 0.5em;
-}
-
-.res_me {
-    width: 60%;
-}
-
-.res_article {
-    line-height: 2;
-    font-size: 25px;
-}
-
-/*iPhone 6*/
-@media (max-width: 375px){
-    .project {
-        width: 100%;
-    }
-
-    .project_description {
-        width: 100%;
-    }
-
-    .descriptDiv {
-        width: 100%;
-    }
-}
-
-/*iPhone 5*/
-@media (max-width: 320px) {
-    * {
-        margin: 0px;
-        box-sizing: border-box;
-    }
-
-    .menuitem {
-        font-size: 15px;
-    }
+	article {
+		line-height: 1;
+	}
 }
