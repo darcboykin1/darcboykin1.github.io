@@ -301,8 +301,21 @@ li.skill {
 		line-height: 2.5;
 	}
 }
+@media only screen and (max-width: 1200px){
+	.footnav {
+		width: 20%;
+	}
+}
+@media only screen and (max-width: 1120px){
+	.foottextcontainer {
+		display: none;
+	}
 
-@media only screen and (max-width: 800px){
+	.footnav {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 850px){
 	.innerNav{
 		display: none;
 	}
@@ -317,8 +330,13 @@ li.skill {
 	}
 }
 @media only screen and (max-width: 400px){
+	
+	.foottextcontainer {
+		display: none;
+	}
+	
 	.footnav{
-		width: 50%;
+		width: 100%;
 	}
 
 	.biosec {
