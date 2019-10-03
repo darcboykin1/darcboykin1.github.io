@@ -226,6 +226,7 @@ article {
 	height: 300px;
 	border: 1px solid #1D599C;
 	background-color: #1D599C;
+	margin: 15px;
 }
 
 .linkToApp, .linkToRepo {

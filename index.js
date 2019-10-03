@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log("JavaScript is connected");
     
     
-    $(document).ready(function(){
-        console.log("jQuery is connected");
-    });
-    
+   
     // $("a").smoothScroll();
     
     axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
@@ -46,7 +43,9 @@ document.addEventListener("DOMContentLoaded", function(){
             $(`.${key}`).append(`<li class="skill">${skills[i]}</li>`);
         };
     });
-    
+        $(document).ready(function(){
+            $('.projects').slick();
+        });
         // window.sr = ScrollReveal();
     
         // sr.reveal('.project', {duration: 500}, 150);
@@ -68,5 +67,5 @@ document.addEventListener("DOMContentLoaded", function(){
       }).catch(function(error) {
         console.log(error);
     });
-    });
+});
     
