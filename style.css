@@ -5,6 +5,10 @@
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
+body {
+	background: rgba(0, 0, 0, 0.05);
+}
+
 hr {
 	margin: 0 auto;
 	width: 90%;
@@ -35,7 +39,7 @@ html, body {
 	width: 100%;
 }
 
-.goldlight {
+.bluelight {
 	color: #1D599C;
 	font-weight: bolder;
 	text-shadow: 2px 2px pink;
@@ -57,6 +61,7 @@ header {
 	height: 100vh;
 	background: url("./assets/animecity.jpg");
 	background-size: cover;
+	background-attachment: fixed;
 
 }
 
@@ -221,17 +226,52 @@ article {
 }
 
 .project {
-	color: white;
-	width: 300px;
 	height: 300px;
-	border: 1px solid #1D599C;
-	background-color: #1D599C;
-	margin: 15px;
+	color: white;
+	margin: 0px 15px;
+	background: rgba(29, 89, 156, 0.9);
+	padding: 10px;
 }
+
+.projectFlex {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.projectInner {
+	width: 40%;
+	list-style: none;
+}
+
+.projectInner img {
+	display: inline-block;
+}
+
+li.skill {
+	list-style: none;
+}
+
+.slick-dots {
+	bottom: 0px;
+}
+
+.slick-prev, .slick-next {
+	background: #1D599C;
+	border-radius: 9px;
+}
+
+.slick-prev:hover, .slick-next:hover {
+	background: #1D599C;
+}
+
+
 
 .linkToApp, .linkToRepo {
 	width: 50px;
 }
+
+
 
 @media only screen and (max-width: 1250px){
 	.biosec {
