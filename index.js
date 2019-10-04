@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(){
         };
     });
         $(document).ready(function(){
-            if(window.innerWidth >= 850){
+            if(window.screen.width >= 850){
             $('.projects').slick({
                 arrows:true,
                 dots: true
