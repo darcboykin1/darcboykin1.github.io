@@ -245,6 +245,13 @@ article {
 	list-style: none;
 }
 
+.icon_home{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 auto;
+}
+
 .projectInner img {
 	display: inline-block;
 }
@@ -393,6 +400,12 @@ li.skill {
 	.biosec {
 		width: 90%;
 	}
+
+	.projectInner {
+		width: 100%;
+	}
+
+	
 
 	.content {
 		width: 100%;

@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", function(){
                         <h3 class="skill_header">Skills Used:</h3>
                         <ul class="${key}">
                         </ul>
+                        <br>
                         <div class="icon_home">
-                            <a href="${meat.repo}" target="_blank"><img src="https://banner2.cleanpng.com/20180704/uxe/kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877.jpg" title="Check out the repo!" class="linkToRepo"></a>
-                            <a href="${meat.link}" target="_blank"><img src="https://www.hixagency.com/Images/globe-icon.png" title="Try it out!" class="linkToApp"></a>
+                            <a href="${meat.repo}" target="_blank"><img src="./assets/gitlogo.jpg" title="Check out the repo!" class="linkToRepo"></a>
+                            <a href="${meat.link}" target="_blank"><img src="./assets/internetlogo.png" title="Try it out!" class="linkToApp"></a>
                         </div>
                     </div>
                 </div>
