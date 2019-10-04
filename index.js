@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function(){
                             <p class="project_description">${meat.description}</p>
                         </div>
                         <br>
-                        <h3>Skills Used:</h3>
+                        <h3 class="skill_header">Skills Used:</h3>
                         <ul class="${key}">
                         </ul>
                         <div class="icon_home">
@@ -47,10 +47,12 @@ document.addEventListener("DOMContentLoaded", function(){
         };
     });
         $(document).ready(function(){
+            if(window.innerWidth >= 850){
             $('.projects').slick({
                 arrows:true,
                 dots: true
             });
+        }
         });
         // window.sr = ScrollReveal();
     

@@ -316,8 +316,55 @@ li.skill {
 	}
 }
 @media only screen and (max-width: 850px){
+	#name {
+		font-size: 60px;
+	}
+
+	p {
+		font-size: 24px;
+	}
+
+	.typewriter{
+		font-size: 36px;
+	}
+
+	.biosec {
+		width: 90%;
+	}
+	
 	.innerNav{
 		display: none;
+	}
+
+	.content {
+		height: initial;
+		width: 60%;
+	}
+
+	.projects {
+		height: initial;
+		flex-direction: column;
+	}
+
+	.project{
+		margin: 10px 0px;
+		height: initial;
+	}
+
+	.projectFlex {
+		flex-direction: column;
+	}
+
+	.projectInner {
+		width: 80%;
+	}
+
+	.skill_header {
+		font-size: 24px;
+	}
+
+	.skill {
+		font-size: 20px;
 	}
 
 	.foottextcontainer {
@@ -329,7 +376,7 @@ li.skill {
 		width: 30%;
 	}
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 500px){
 	
 	.foottextcontainer {
 		display: none;
