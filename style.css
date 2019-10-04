@@ -394,7 +394,16 @@ li.skill {
 		width: 90%;
 	}
 
+	.content {
+		width: 100%;
+		padding: 10px;
+	}
+
 	article {
 		line-height: 1;
+	}
+	
+	.projectFlex > img {
+		width: 100%;
 	}
 }

@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 <h1 class="project_name"><span class="pinklight">${key}</span></h1>
                 <br>
                 <div class="projectFlex">
-                    <img src="${meat.cover}" width="400px">
+                    <img src="${meat.cover}" width="350px">
                     <br>
                     <div class="projectInner">
                         <div class="descriptDiv" style="background-color: rgba(0,0,0,0);">
