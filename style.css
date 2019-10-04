@@ -379,9 +379,9 @@ li.skill {
 }
 @media only screen and (max-width: 500px){
 	header{
-		background-attachment: scroll;
+		background-attachment: initial;
 	}
-	
+
 	.foottextcontainer {
 		display: none;
 	}
