@@ -65,23 +65,26 @@ document.addEventListener("DOMContentLoaded", function(){
         };
 
         sr.reveal('#name', {
-            duration: 1500,
+            duration: 1000,
             origin: 'left',
             distance: '15%'
         });
 
         sr.reveal('.typewriter', {
-            duration: 1500,
+            duration: 1000,
             origin: 'right',
-            distance: '15%',
-            delay: 1500
+            distance: '15%'
         });
 
         sr.reveal('.biosec', slideUp);
 
         sr.reveal('.projects', slideUp);
 
-        sr.reveal('footer', slideUp);
+        sr.reveal('footer', {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '80px'
+        });
 
         sr.reveal('hr', slideUp);
 
@@ -89,21 +92,20 @@ document.addEventListener("DOMContentLoaded", function(){
             duration: 500,
             origin: 'top',
             distance: '80px',
-            delay: 3000
         });
 
         sr.reveal('#mission', {
             duration: 500,
             origin: 'top',
             distance: '80px',
-            delay: 3100
+            delay: 100
         });
 
         sr.reveal('#projects', {
             duration: 500,
             origin: 'top',
             distance: '80px',
-            delay: 3200
+            delay: 200
         });
 
     
