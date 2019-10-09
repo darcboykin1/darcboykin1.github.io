@@ -55,23 +55,57 @@ document.addEventListener("DOMContentLoaded", function(){
             });
         }
         });
-        // window.sr = ScrollReveal();
-    
-        // sr.reveal('.project', {duration: 500}, 150);
-    
-        // sr.reveal('.contactimg', {duration: 500}, 150);
-    
-        // sr.reveal('.skill', {duration: 1100}, 120);
-    
-        // sr.reveal('.aboutarticle', {
-        //     duration: 2000,
-        //     origin: 'right'
-        // });
-    
-        // sr.reveal('.aboutpic',{
-        //     duration: 4000,
-        //     origin: 'left'
-        // });
+
+        window.sr = ScrollReveal();
+
+        const slideUp = {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '20%'
+        };
+
+        sr.reveal('#name', {
+            duration: 1500,
+            origin: 'left',
+            distance: '15%'
+        });
+
+        sr.reveal('.typewriter', {
+            duration: 1500,
+            origin: 'right',
+            distance: '15%',
+            delay: 1500
+        });
+
+        sr.reveal('.biosec', slideUp);
+
+        sr.reveal('.projects', slideUp);
+
+        sr.reveal('footer', slideUp);
+
+        sr.reveal('hr', slideUp);
+
+        sr.reveal('#about', {
+            duration: 500,
+            origin: 'top',
+            distance: '80px',
+            delay: 3000
+        });
+
+        sr.reveal('#mission', {
+            duration: 500,
+            origin: 'top',
+            distance: '80px',
+            delay: 3100
+        });
+
+        sr.reveal('#projects', {
+            duration: 500,
+            origin: 'top',
+            distance: '80px',
+            delay: 3200
+        });
+
     
       }).catch(function(error) {
         console.log(error);

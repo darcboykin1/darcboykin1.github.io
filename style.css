@@ -1,3 +1,11 @@
+/* sr styles */
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+/* end sr styles */
+
 * {
 	padding: 0px;
 	margin: 0px;
@@ -260,6 +268,8 @@ li.skill {
 	list-style: none;
 }
 
+/* styles for slick.js */
+
 .slick-dots {
 	bottom: 0px;
 }
@@ -274,12 +284,19 @@ li.skill {
 }
 
 
-
 .linkToApp, .linkToRepo {
 	width: 50px;
 }
 
+.slick-arrow{
+	height: 80px;
+}
 
+.slick-prev::before, .slick-next::before {
+	opacity: 1;
+}
+
+/* end of slick.js styles */
 
 @media only screen and (max-width: 1250px){
 	.biosec {
