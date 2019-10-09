@@ -80,12 +80,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         sr.reveal('.projects', slideUp);
 
-        sr.reveal('footer', {
-            duration: 1500,
-            origin: 'bottom',
-            distance: '80px'
-        });
-
         sr.reveal('hr', slideUp);
 
         sr.reveal('#about', {
