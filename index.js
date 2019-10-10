@@ -20,23 +20,23 @@ document.addEventListener("DOMContentLoaded", function(){
 
         $(".projects").append(`
             <div class="project">
-                <h1 class="project_name"><span class="pinklight">${key}</span></h1>
+                <h1 class="project_name"><span class="bluelight">${key}</span></h1>
                 <br>
                 <div class="projectFlex">
-                    <img src="${meat.cover}" width="350px">
+                    <img src="${meat.cover}" width="350px" class="project_img">
                     <br>
                     <div class="projectInner">
                         <div class="descriptDiv" style="background-color: rgba(0,0,0,0);">
-                            <p class="project_description">${meat.description}</p>
+                            <p class="project_description bluelight">${meat.description}</p>
                         </div>
                         <br>
-                        <h3 class="skill_header">Skills Used:</h3>
+                        <h3 class="skill_header bluelight">Skills Used:</h3>
                         <ul class="${key}">
                         </ul>
                         <br>
                         <div class="icon_home">
-                            <a href="${meat.repo}" target="_blank"><img src="./assets/gitlogo.jpg" title="Check out the repo!" class="linkToRepo"></a>
-                            <a href="${meat.link}" target="_blank"><img src="./assets/internetlogo.png" title="Try it out!" class="linkToApp"></a>
+                            <a href="${meat.repo}" target="_blank"><span class="bluelight">VIEW REPO</span></a>
+                            <a href="${meat.link}" target="_blank"><span class="bluelight">TRY DEMO</span></a>
                         </div>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){
         );
     
         for (var i = 0; i < skills.length; i++){
-            $(`.${key}`).append(`<li class="skill">${skills[i]}</li>`);
+            $(`.${key}`).append(`<li class="skill bluelight">${skills[i]}</li>`);
         };
     });
         $(document).ready(function(){

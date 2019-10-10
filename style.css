@@ -252,8 +252,13 @@ article {
 	height: 300px;
 	color: white;
 	margin: 0px 15px;
-	background: rgba(29, 89, 156, 0.9);
+	background: rgba(252, 252, 252, 0.8);
 	padding: 10px;
+	border-radius: 20px;
+}
+
+.project_img {
+	border: 2px solid #1D599C;
 }
 
 .projectFlex {
@@ -291,10 +296,18 @@ li.skill {
 .slick-prev, .slick-next {
 	background: #1D599C;
 	border-radius: 9px;
+	transition: 0.5s;
 }
 
 .slick-prev:hover, .slick-next:hover {
-	background: #1D599C;
+	background:#1D599C;
+	transition: 0.5s;
+}
+
+.slick-prev::before, .slick-next::before {
+	opacity: 1;
+	background:#1D599C;
+	border-radius: 360px;
 }
 
 
@@ -306,9 +319,7 @@ li.skill {
 	height: 80px;
 }
 
-.slick-prev::before, .slick-next::before {
-	opacity: 1;
-}
+
 
 /* end of slick.js styles */
 
