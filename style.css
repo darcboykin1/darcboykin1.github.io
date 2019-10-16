@@ -388,7 +388,6 @@ li.skill {
 
 	.content {
 		height: initial;
-		width: 60%;
 	}
 
 	.projects {
@@ -396,9 +395,20 @@ li.skill {
 		flex-direction: column;
 	}
 
-	.project{
+	.projects_container {
+		padding: 0px;
+	}
+
+	.projects {
+		width: initial;
+		padding: 10px;
+	}
+
+	.project {
+		border-radius: initial;
 		margin: 10px 0px;
 		height: initial;
+		width: 90%;
 	}
 
 	.projectFlex {
@@ -427,8 +437,13 @@ li.skill {
 	}
 }
 @media only screen and (max-width: 500px){
-	header{
+	header, .projects_container{
 		background-size: contain;
+		background: url("./assets/p5nighttime.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-attachment: fixed;
 	}
 
 	.foottextcontainer {
@@ -443,22 +458,27 @@ li.skill {
 		width: 90%;
 	}
 
+	.projects_container.content, .projects {
+		padding: 0px;
+	}
 	.projectInner {
 		width: 100%;
 	}
-
-	
 
 	.content {
 		width: 100%;
 		padding: 10px;
 	}
-
-	article {
+	/* article {
 		line-height: 1;
+	} */
+
+	.biosec article, #missionbio {
+		line-height: 1.5;
 	}
 	
 	.projectFlex > img {
 		width: 100%;
 	}
+
 }
