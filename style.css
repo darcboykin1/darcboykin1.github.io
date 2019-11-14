@@ -259,6 +259,7 @@ article {
 
 .project_img {
 	border: 2px solid #1D599C;
+	border-radius: 20px;
 }
 
 .projectFlex {

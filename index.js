@@ -3,10 +3,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     console.log("JavaScript is connected");
     
-    
-   
-    // $("a").smoothScroll();
-    
     axios.get('https://portfolio-917bc.firebaseio.com/projects.json')
       .then(function(response) {
     
@@ -81,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function(){
         sr.reveal('.projects', slideUp);
 
         sr.reveal('hr', slideUp);
+
+        // sr.reveal('.project')
 
         sr.reveal('#about', {
             duration: 500,
